@@ -1,8 +1,8 @@
-# CitizenSolar Claim Boundaries
+# CitizenSolar Claim Boundaries RC0.1
 
-This file defines allowed language, forbidden language, maturity language, and repo-boundary rules for the public CitizenSolar canon.
+This file defines allowed language, restricted language, forbidden language, maturity language, and repo-boundary rules for the public CitizenSolar canon.
 
-## Allowed Public Claim Pattern
+## 1. Allowed Public Claim Pattern
 
 Use:
 
@@ -21,7 +21,22 @@ Use:
 - pilot-ready where applicable;
 - roadmap toward stronger assurance.
 
-## Forbidden / Restricted Claims
+## 2. Restricted Claims
+
+These may be used only with explicit maturity and scope boundaries:
+
+| Phrase | Required boundary |
+|---|---|
+| autonomous | Use only as future-only or explicitly disabled for current market action |
+| execution | Use only as supervised/staged, never implied as live grid dispatch |
+| compliance | Use standards-aware / designed-for-review unless certified by a named authority |
+| finance-ready | Use as readiness/evidence packaging, not funding/tax/loan approval |
+| supplier approved | Use only if a documented partnership or approval exists |
+| Community Energy Bank | Must state it is not deposit banking, investment, or regulated settlement |
+| P2P energy trading | Use only as simulation/research/future pathway unless regulated system exists |
+| token / SSRL | Archive/reference only; not active sale or production mainnet |
+
+## 3. Forbidden / Unsupported Current Claims
 
 Do not claim:
 
@@ -47,7 +62,7 @@ Do not claim:
 - regulated settlement service;
 - deposit-taking banking service.
 
-## Required Boundary Text
+## 4. Required Boundary Text
 
 Use this public boundary when describing current platform maturity:
 
@@ -73,19 +88,16 @@ Use this boundary for the Community Energy Bank:
 The Community Energy Bank is not a deposit-taking bank, investment product, speculative token system, guaranteed-return product, or regulated settlement service.
 ```
 
-## Maturity Ladder
+Use this boundary for P2P / market material:
 
-| Level | Label | Meaning |
-|---|---|---|
-| M0 | Concept | Doctrine or conceptual design |
-| M1 | Canon Draft | Public-safe written doctrine |
-| M2 | Architecture Draft | Blue Paper level design |
-| M3 | Simulation | No real dispatch; modeled behavior only |
-| M4 | Pilot Review | Site-specific review, not approval |
-| M5 | Supervised Pilot | Human/operator supervised deployment |
-| M6 | Operational Review | Audited operation under known constraints |
-| M7 | Certified/Regulated | Only when external certification/regulatory status exists |
+```text
+P2P energy trading and market-adapter material is treated as simulation, research, or future-pathway architecture unless a separate regulated, permitted, reviewed, and operational system exists.
+```
 
-## Repo Boundary
+## 5. Repo Boundary
 
 The public canon repo may describe architecture and maturity boundaries. It must not expose implementation secrets, control code, credentials, private customer data, private supplier data, or live market-settlement logic.
+
+## 6. Enforcement Rule
+
+Downstream repositories must reference this file before publishing public claims. If a claim is not listed in `CLAIM_REGISTER.md` or cannot be mapped to an allowed claim pattern here, the claim must remain internal until reviewed.
