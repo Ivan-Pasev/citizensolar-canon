@@ -1,8 +1,8 @@
-# CitizenSolar Light Paper
+# CitizenSolar Light Paper RC0.1
 
 **Storage-first infrastructure for the software-defined grid.**
 
-Status: Canon draft. Short investor/customer surface.
+**Status:** Canon RC0.1. Short investor/customer surface.
 
 ## One-Liner
 
@@ -18,7 +18,7 @@ Buyers do not only need panels or batteries. They need a complete package that a
 
 - Which hardware is supportable?
 - Which suppliers are acceptable?
-- Which grants, loans, leases, rebates, or tax-credit routes might apply?
+- Which grants, loans, leases, rebates, or tax-credit routes may be relevant?
 - Which installation and interconnection path is realistic?
 - Which telemetry and cybersecurity posture is acceptable?
 - Which operating model is safe, auditable, and governable?
@@ -51,7 +51,7 @@ Each pack combines:
 
 ## Why Now
 
-Storage, grid congestion, cybersecurity rules, supplier-origin scrutiny, public funding requirements, and distributed-energy adoption are converging into one buyer problem. CitizenSolar turns that problem into a repeatable system.
+Storage growth, grid congestion, cybersecurity rules, supplier-origin scrutiny, public funding requirements, and distributed-energy adoption are converging into one buyer problem. CitizenSolar turns that problem into a repeatable system.
 
 ## Moat
 
@@ -76,6 +76,16 @@ jurisdiction + finance + supplier risk + orchestration + telemetry + CEB governa
 
 CitizenSolar does not provide final legal, tax, accounting, procurement, engineering, interconnection, cybersecurity-certification, funding-approval, savings-guarantee, grid-revenue-guarantee, or live regulated market-dispatch authority.
 
+The current public orchestration boundary is:
+
+```text
+observe → explain → recommend → simulate → operator review → audit
+```
+
 ## Investor Thesis
 
 CitizenSolar starts as a services-plus-software infrastructure packager and can grow toward recurring software, compliance intelligence, supplier-risk intelligence, Community Energy Bank reporting, orchestration readiness tooling, and eventually regional hardware/controller production.
+
+## RC0.1 Forwarding Rule
+
+This Light Paper can be sent to investors, municipalities, strategic partners, EPCs, and early advisors only together with the boundary that it is a canon-stage paper, not a financing offer, token sale, certification claim, engineering approval, procurement approval, or live market-dispatch claim.
