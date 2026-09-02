@@ -1,14 +1,23 @@
-# CitizenSolar Canon Roadmap
+# CitizenSolar Canon Roadmap RC0.1
 
 ## Current Decision
 
 Finish and polish the canon before developing sensitive implementation repositories.
 
+```text
+CANON
+→ WEBSITE / PUBLIC ROUTES
+→ SAFE PUBLIC SKELETONS
+→ PRIVATE IMPLEMENTATION REPOS
+→ SIMULATION
+→ PILOT-READY DEVELOPMENT
+```
+
 ## Phase C0 — Canon Seed
 
-Status: active.
+Status: complete.
 
-Deliverables:
+Seeded public files:
 
 - `README.md`
 - `CANON.md`
@@ -19,40 +28,41 @@ Deliverables:
 - `SOURCE_REGISTER.md`
 - `REPO_ECOSYSTEM.md`
 - `ROADMAP.md`
+- `SECURITY.md`
+- `LICENSE_POLICY.md`
 
-## Phase C1 — Canon Polish
+## Phase C1 — Canon Polish / RC0.1
 
-Polish the public papers into investor/reviewer form:
+Status: complete.
 
-- remove duplicated prose;
-- add numbered sections;
-- add figure captions;
-- add source IDs;
-- add claim IDs;
-- align route copy with live `citizen.solar` pages;
-- preserve older protocol material under archive/reference status.
+R6C added:
 
-## Phase C2 — Canon Release Candidate
+- RC0.1 labels;
+- reduced duplication between White / Blue / Light papers;
+- stable claim IDs;
+- source IDs;
+- maturity ladder;
+- release checklist;
+- diagram backlog;
+- stronger public/private repo boundaries;
+- implementation hold rules.
 
-Create release candidate:
+## Phase C2 — Canon Review
 
-```text
-CitizenSolar Canon RC0.1
-```
+Status: next.
 
-Required checks:
+Review checklist:
 
-- White Paper matches public website direction;
-- Blue Paper does not expose sensitive implementation details;
-- Light Paper is forwardable to investor/customer/partner;
-- Claim boundaries pass;
-- source register is current;
-- repo ecosystem map is aligned with created repos;
-- no implementation repo claims exceed canon maturity.
+- read all RC0.1 files as one system;
+- verify claim IDs and source IDs are internally consistent;
+- verify live-site `/whitepaper` replacement remains public-safe;
+- verify `citizenvault-hardware` visibility decision;
+- decide whether to create/expose `citizensolar-site` and `citizensolar-ecosystem`;
+- decide whether to tag/publish Canon RC0.1 after manual review.
 
 ## Phase C3 — Site Synchronization
 
-After canon is polished:
+After canon review:
 
 - update `/whitepaper` route;
 - create `/resources/protocol-archive` or `/technical/protocol-reference`;
@@ -64,16 +74,16 @@ After canon is polished:
 
 Only after C1/C2:
 
-- seed safe public READMEs for implementation repos;
+- seed safe public/private READMEs for implementation repos;
 - define each repo's boundary from the canon;
 - create private issue boards;
 - add security policy and no-secrets guidance;
 - add mock-only schemas where safe;
 - postpone real control/firmware/P2P internals until review.
 
-## Phase C5 — Technical Development
+## Phase C5 — Simulation Work
 
-Begin controlled technical work:
+Begin controlled non-production technical work:
 
 - SolarINT Orchestrator simulation layer;
 - SolarEye telemetry simulator;
