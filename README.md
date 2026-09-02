@@ -1,29 +1,53 @@
 # CitizenSolar Canon
 
-Canonical public doctrine, whitepaper spine, claim boundaries, and repo-governance surface for the CitizenSolar ecosystem.
+**Status:** Canon RC0.1 — public doctrine stabilized before implementation.
+
+This repository is the public upstream authority for the CitizenSolar ecosystem. It defines the storage-first thesis, allowed claims, source discipline, maturity boundaries, repo boundaries, and release gates that downstream website and implementation repositories must follow.
 
 CitizenSolar is a storage-first distributed energy infrastructure platform for the software-defined grid. It helps municipalities, C&I operators, energy communities, EPCs, and public-sector buyers evaluate, package, and operate compliant solar-storage systems using trusted hardware, secure telemetry, deterministic orchestration, supplier-risk screening, finance-readiness evidence, and Community Energy Bank reporting.
 
-## Current Status
-
-```text
-CANON-FIRST PHASE: ACTIVE
-PUBLIC CANON REPO: SEEDED
-IMPLEMENTATION REPOS: HOLD UNTIL CANON GATE
-```
-
-This repository is the public doctrine layer. It is not the deployed website repo, firmware repo, orchestration-control repo, hardware-CAD repo, trading engine repo, infrastructure repo, or supplier/private diligence database.
-
 ## Canon-First Rule
 
-Before developing the sensitive implementation repositories, finish and stabilize the canon:
+```text
+CANON
+→ WEBSITE / PUBLIC ROUTES
+→ SAFE PUBLIC SKELETONS
+→ PRIVATE IMPLEMENTATION REPOS
+→ SIMULATION
+→ PILOT-READY DEVELOPMENT
+```
 
-1. White Paper: public commercial/investor storage-first thesis.
-2. Blue Paper: technical architecture and bounded implementation design.
-3. Light Paper: concise investor/customer narrative.
-4. Claim Boundaries: phrases allowed, phrases forbidden, maturity limits.
-5. Repo Ecosystem Map: public/private repo responsibilities.
-6. Source Register: evidence anchors and refresh discipline.
+No implementation repo should exceed this canon's public claims, maturity level, safety boundary, or source discipline.
+
+## RC0.1 Canon Files
+
+| File | Role |
+|---|---|
+| `CANON.md` | Canonical doctrine, claim IDs, system map |
+| `WHITEPAPER.md` | Public commercial / investor storage-first white paper |
+| `BLUEPAPER.md` | Public-safe technical architecture and control boundary |
+| `LIGHTPAPER.md` | Forwardable investor/customer summary |
+| `CLAIM_BOUNDARIES.md` | Allowed, restricted, and forbidden claim language |
+| `CLAIM_REGISTER.md` | Stable claim IDs and evidence class mapping |
+| `SOURCE_REGISTER.md` | Source IDs, live-site anchors, market/regulatory evidence classes |
+| `MATURITY_LADDER.md` | M0-M7 maturity definitions and allowed repo behavior |
+| `REPO_ECOSYSTEM.md` | Public/private repo split and implementation dependencies |
+| `RELEASE_CHECKLIST.md` | RC0.1 gate checks before public/site synchronization |
+| `DIAGRAM_BACKLOG.md` | Figure queue for website, white paper, blue paper, and deck |
+| `ROADMAP.md` | Canon-first roadmap and next phases |
+| `SECURITY.md` | Public repository security policy |
+| `LICENSE_POLICY.md` | Content/code licensing policy |
+
+## Current Implementation Hold
+
+The following repos remain downstream and should not receive real control, firmware, trading, or deployment internals until the relevant canon gates are closed:
+
+- `solarint-orchestrator`
+- `solareye-edge`
+- `ceb-ledger-core`
+- `citizenvault-hardware`
+
+`citizenvault-hardware` should be treated as sensitive. If it will contain BOM, CAD, test protocols, component choices, certification files, or manufacturing data, it should be private or split into a public documentation repo plus private engineering repo.
 
 ## Public Safety Boundary
 
@@ -38,30 +62,39 @@ This repo must not contain:
 - live trading or market-dispatch code;
 - deployment secrets, tokens, cloud credentials, or private infrastructure configuration.
 
-## Canonical Repositories
-
-Initial ecosystem split:
-
-| Repository | Visibility | Role |
-|---|---:|---|
-| `citizensolar-canon` | Public | Doctrine, papers, claim boundaries, source register |
-| `citizensolar-site` | Public | Deployed website and public routes |
-| `solarint-orchestrator` | Private | Operator-supervised deterministic orchestration |
-| `solareye-edge` | Private | Edge controller and telemetry trust stack |
-| `citizenvault-hardware` | Private initially | Hardware standards, BOM/CAD/test protocols |
-| `ceb-ledger-core` | Private initially | Community Energy Bank ledger model and accounting logic |
-
 ## Canonical Doctrine
 
-CitizenSolar is not a generic battery reseller. It is a jurisdiction-fit, finance-aware, sovereign energy-system packager and secured deterministic orchestration layer for storage-first distributed grids.
+CitizenSolar is not a generic battery reseller.
 
-## Release Discipline
+CitizenSolar is a jurisdiction-fit, finance-aware, sovereign energy-system packager and secured deterministic orchestration layer for storage-first distributed grids.
 
-No implementation repo should claim production readiness until the canon defines:
+Current public orchestration boundary:
 
-- maturity level;
-- allowed public claims;
-- forbidden claims;
-- external evidence anchors;
-- integration boundaries;
-- safety and legal review requirements.
+```text
+observe → explain → recommend → simulate → operator review → audit
+```
+
+Supervised execution is staged and bounded. Autonomous market action is future-only and disabled unless separately permitted, implemented, reviewed, certified where required, and governed.
+
+## Current Release State
+
+```text
+CANON RC0.1:              CLOSED
+PUBLIC CANON REPO:        POLISHED
+CLAIM IDS:                ASSIGNED
+SOURCE IDS:               ASSIGNED
+MATURITY LADDER:          ASSIGNED
+DIAGRAM BACKLOG:          CREATED
+IMPLEMENTATION REPOS:     HOLD
+SITE REPO:                NOT EXPOSED TO CONNECTOR
+ECOSYSTEM ROOT REPO:      NOT EXPOSED TO CONNECTOR
+```
+
+## Next Gate
+
+After RC0.1 review, synchronize the deployed website route:
+
+- `/whitepaper` becomes the canonical storage-first public White Paper.
+- `/resources/protocol-archive` preserves legacy SSRL/token/proof/quorum/governance material with boundaries.
+- `/resources` cards point to the canonical papers and supporting routes.
+- all website claims remain bounded by `CLAIM_BOUNDARIES.md` and `CLAIM_REGISTER.md`.
