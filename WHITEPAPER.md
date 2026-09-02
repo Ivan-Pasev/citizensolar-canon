@@ -1,35 +1,72 @@
-# CitizenSolar White Paper
+# CitizenSolar White Paper RC0.1
 
 **Storage-First Sovereign Energy Infrastructure for the Software-Defined Grid**
 
-Status: Canon draft. Public, commercial, investor-readable, procurement-safe.
+**Status:** Canon RC0.1. Public, commercial, investor-readable, procurement-safe.
 
-## Executive Thesis
+## 0. Scope Boundary
+
+CitizenSolar describes a storage-first platform, product architecture, and pilot-ready packaging model. It does not represent a live regulated market-dispatch system, certified financial infrastructure, active token sale, production mainnet, autonomous grid-control system, or final engineering/procurement/tax/legal approval authority.
+
+## 1. Executive Thesis
+
+**Claim ID:** `CS-CLAIM-001`, `CS-CLAIM-002`, `CS-CLAIM-003`
 
 CitizenSolar is a storage-first distributed energy infrastructure platform for the software-defined grid.
 
 It helps municipalities, C&I operators, energy communities, EPCs, and public-sector buyers evaluate, package, and operate compliant solar-storage systems using trusted hardware, secure telemetry, deterministic orchestration, supplier-risk screening, finance-readiness evidence, and Community Energy Bank reporting.
 
-CitizenSolar does not present the current platform as a live regulated market-dispatch system, certified financial infrastructure, autonomous grid-control system, token sale, or final engineering/procurement/tax/legal approval authority.
+CitizenSolar is not a generic battery reseller. It is a software-led infrastructure company that turns fragmented hardware, fragmented financing, fragmented regulation, fragmented installer capacity, and fragmented grid-edge telemetry into jurisdiction-fit, finance-aware, software-attached storage-first energy infrastructure.
 
-## Why Storage First
+## 2. Why Storage First
+
+**Claim ID:** `CS-CLAIM-004`
 
 Solar generation alone is no longer the decisive infrastructure unit. The decisive unit is the governed solar-storage system: PV, BESS, inverter or PCS, BMS, EMS, meters, edge controllers, telemetry, software, cybersecurity, supplier-risk evidence, financing documentation, installer/EPC handoff, and post-installation operating governance.
 
 Storage is not an accessory to solar. Storage is the operating layer of the next distributed grid.
 
-## Platform Layers
+Market evidence supports a storage-first timing thesis, but does not guarantee CitizenSolar revenue, adoption, savings, project approval, interconnection approval, or public-funding success.
 
-1. Physical energy assets: PV, BESS, inverters/PCS, BMS, EMS, meters, EVSE, switchgear, sensors, and site safety systems.
-2. Grid-edge trust: SolarEye controllers/gateways, device identity, telemetry integrity, firmware/update state, and remote-access posture.
-3. Software fabric: SolarINT OS, SolarINT Orchestrator, Mission Control, OnGrid Security, Onward Analytics, and Community Bank Portal.
-4. Deterministic orchestration: policy-bounded agents that observe, explain, recommend, simulate, and support supervised execution only where validated and authorized.
-5. Governance and evidence: Community Energy Bank ledgers, audit records, finance-fit records, supplier-risk records, beneficiary records, and claim-boundary records.
-6. Regional execution: EU/USA/state/country pack templates, AHJ/DSO/interconnection notes, grant/tax/loan/lease mapping, installer/EPC handoff, and partner routing.
+## 3. Market and Grid Transition
 
-## Energy System Packs
+**Source classes:** `SOURCE-MARKET`, `SOURCE-OFFICIAL`
 
-CitizenSolar turns regulation, financing, suppliers, installers, cybersecurity, telemetry, and storage operation into product inputs.
+Current public evidence supports the timing thesis:
+
+- global energy storage has entered a 100-GW annual additions era;
+- grid congestion, project queues, and interconnection delays are material constraints;
+- battery storage, demand flexibility, co-location, and grid-enhancing approaches are increasingly treated as system levers;
+- buyers need finance-ready, supplier-screened, cyber-aware packaging rather than isolated hardware procurement.
+
+CitizenSolar should use market data as evidence of timing and category relevance, not as a direct forecast of company revenue.
+
+## 4. Regulatory and Financing Shift
+
+Energy infrastructure is becoming a cyber-physical, supplier-risk, and finance-documentation domain.
+
+In the EU, battery regulation, cyber-resilience rules, NIS2 posture, high-risk inverter/PCS restrictions in public financing, public procurement, Modernisation Fund channels, and Net-Zero Industry Act industrial direction all push buyers toward documented, supplier-screened, compliant, and supportable systems.
+
+In the USA, energy-storage credits, domestic-content bonus paths, FEOC/PFE material-assistance screens, DOE grid-resilience channels, USDA REAP routes, state-level storage incentives, AHJ/fire review, interconnection requirements, and remote-access scrutiny all push projects toward finance-ready evidence and supplier-origin clarity.
+
+CitizenSolar turns regulation and financing into product inputs.
+
+## 5. Platform Architecture
+
+CitizenSolar’s platform has six public architecture layers:
+
+| Layer | Function | Public Boundary |
+|---|---|---|
+| Physical energy assets | PV, BESS, inverter/PCS, BMS, EMS, meters, EVSE, switchgear, sensors | Descriptive; no final engineering approval |
+| Grid-edge trust | SolarEye controllers/gateways, device identity, telemetry integrity, firmware/update posture | Architecture-level; no keys/secrets |
+| Software fabric | SolarINT OS, SolarINT Orchestrator, Mission Control, OnGrid Security, Onward Analytics, Community Bank Portal | Product-level; no internal control code |
+| Deterministic orchestration | policy-bounded observe/explain/recommend/simulate/operator-review/audit loop | No live autonomous control claim |
+| Governance and evidence | CEB ledgers, audit records, finance-fit records, supplier-risk records, beneficiary records | No regulated banking/settlement claim |
+| Regional execution | EU/USA pack templates, AHJ/DSO/interconnection notes, financing map, installer/EPC handoff | No legal/tax/procurement/permit guarantee |
+
+## 6. Energy System Packs
+
+**Claim ID:** `CS-CLAIM-005`
 
 ```text
 CitizenSolar Energy System Pack
@@ -53,28 +90,36 @@ CS-[MACRO]-[JURISDICTION]-[BUYER]-[USE]-[SIZE]-SOV-FIN
 
 Example pack classes:
 
-- `CS-EU-BG-MUNI-CEB-250-SOV-FIN`
-- `CS-EU-BG-SME-RESERVE-100-SOV-FIN`
-- `CS-EU-DE-COMMUNITY-STORAGE-250-SOV-FIN`
-- `CS-EU-NL-GRID-CONGESTION-500-SOV-FIN`
-- `CS-US-TX-INDUSTRIAL-BACKUP-500-SOV-FIN`
-- `CS-US-CA-CI-PEAK-250-SOV-FIN`
-- `CS-US-NY-MUNI-RESILIENCE-250-SOV-FIN`
-- `CS-US-RURAL-SME-REAP-50-SOV-FIN`
+| Pack | Initial role |
+|---|---|
+| `CS-EU-BG-MUNI-CEB-250-SOV-FIN` | Bulgarian municipal CEB pilot candidate |
+| `CS-EU-BG-SME-RESERVE-100-SOV-FIN` | SME reserve / weak-grid resilience candidate |
+| `CS-EU-DE-COMMUNITY-STORAGE-250-SOV-FIN` | German community storage candidate |
+| `CS-EU-NL-GRID-CONGESTION-500-SOV-FIN` | Netherlands congestion-relief storage candidate |
+| `CS-US-TX-INDUSTRIAL-BACKUP-500-SOV-FIN` | Texas industrial backup candidate |
+| `CS-US-CA-CI-PEAK-250-SOV-FIN` | California C&I peak/storage candidate |
+| `CS-US-NY-MUNI-RESILIENCE-250-SOV-FIN` | New York municipal resilience candidate |
+| `CS-US-RURAL-SME-REAP-50-SOV-FIN` | U.S. rural/agricultural REAP-aligned candidate |
 
-## Five-Score Pack Gate
+## 7. Five-Score Pack Gate
 
-Every Energy System Pack must carry:
+**Claim ID:** `CS-CLAIM-006`
 
-- `CS-PROVIDER-FIT`
-- `CS-SOV-STACK`
-- `CS-FINANCE-FIT`
-- `CS-ORCHESTRATION-FIT`
-- `CS-CEB-FIT`
+Every serious Energy System Pack must carry:
+
+| Score | Screens |
+|---|---|
+| `CS-PROVIDER-FIT` | supplier, warranty, service, documentation, installation, integration readiness |
+| `CS-SOV-STACK` | cyber/control-chain, firmware, cloud, remote access, jurisdiction, supplier-risk posture |
+| `CS-FINANCE-FIT` | grants, loans, rebates, tax credits, domestic content, leases, PPAs, ESCO options, beneficiary evidence |
+| `CS-ORCHESTRATION-FIT` | telemetry, device identity, reserve policy, audit trail, operator approval, action-tier readiness |
+| `CS-CEB-FIT` | asset, capacity, reserve-policy, dispatch/event, allocation-report, assurance, governance ledger readiness |
 
 Scores are readiness classifications for review, planning, and partner handoff. They are not approvals, certifications, funding guarantees, tax-credit qualifications, engineering approvals, procurement approvals, savings guarantees, or grid-revenue guarantees.
 
-## SolarINT Orchestrator
+## 8. SolarINT Orchestrator
+
+**Claim ID:** `CS-CLAIM-007`
 
 SolarINT Orchestrator is CitizenSolar's deterministic orchestration layer for storage-first distributed energy systems.
 
@@ -86,23 +131,29 @@ Current action boundary:
 observe → explain → recommend → simulate → operator review → audit
 ```
 
-## Storage Bank and Community Energy Bank
+Supervised execution is staged and bounded. Autonomous market action is future-only and disabled unless separately permitted, implemented, reviewed, governed, and certified where required.
+
+## 9. Storage Bank and Community Energy Bank
+
+**Claim ID:** `CS-CLAIM-008`
 
 The Storage Bank is the commercial center of gravity: storage capacity is treated as an operating asset that can support resilience, self-consumption, public-benefit reporting, and future flexibility paths where allowed.
 
 The Community Energy Bank is a governed shared-storage operating model with seven ledgers:
 
-- Asset Ledger
-- Capacity Ledger
-- Reserve-Policy Ledger
-- Dispatch/Event Ledger
-- Allocation-Report Ledger
-- Assurance Ledger
-- Governance Ledger
+1. Asset Ledger
+2. Capacity Ledger
+3. Reserve-Policy Ledger
+4. Dispatch/Event Ledger
+5. Allocation-Report Ledger
+6. Assurance Ledger
+7. Governance Ledger
 
 The Community Energy Bank is not a deposit-taking bank, investment product, speculative token system, guaranteed-return product, or regulated settlement service.
 
-## BYOS and Supplier Candidate Screening
+## 10. BYOS and Supplier Candidate Screening
+
+**Claim ID:** `CS-CLAIM-010`
 
 BYOS means Bring Your Own Storage. It is a controlled adapter model for third-party batteries, inverters, BMS, meters, EMS, EVSE, telemetry systems, and mixed fleets.
 
@@ -110,13 +161,15 @@ BYOS is not a universal compatibility claim. Each asset must be screened for dev
 
 Supplier pages and registries must treat suppliers as diligence candidates unless a documented partnership exists. Supplier inclusion does not mean approval, certification, procurement approval, funding eligibility, endorsement, or final compatibility.
 
-## Finance-Fit and Beneficiary Compliance
+## 11. Finance-Fit and Beneficiary Compliance
+
+**Claim ID:** `CS-CLAIM-009`
 
 CitizenSolar's Finance-Fit Energy System Review maps grants, loans, leases, tax-credit evidence, supplier-risk screening, beneficiary compliance, ownership options, and readiness evidence for a storage-first deployment.
 
 It is a bounded readiness and packaging service. It does not provide tax advice, legal advice, accounting advice, procurement advice, final engineering advice, funding approval, grant awards, rebate confirmation, tax-credit qualification, loan approval, permit approval, interconnection approval, savings guarantee, or revenue guarantee.
 
-## Priority Strategy
+## 12. Priority Strategy
 
 EU priority markets:
 
@@ -139,7 +192,7 @@ USA priority markets:
 - Hawaii island storage and microgrid-readiness packs;
 - rural/agricultural USDA REAP-aligned packs.
 
-## Partner and Pilot Pathways
+## 13. Partner and Pilot Pathways
 
 Near-term commercial loop:
 
@@ -164,6 +217,23 @@ screened partner hardware
 → software-attached storage fleet operations
 ```
 
-## Technical Archive Boundary
+## 14. Technical Archive Boundary
 
 Earlier SSRL, token-utility, proof, quorum, governance, zk/PQ, and advanced roadmap material belongs in a bounded technical archive. It is not the canonical commercial White Paper and must not be presented as an active token sale, production mainnet, regulated settlement system, certified financial infrastructure, or live autonomous grid-control system.
+
+Recommended live route:
+
+```text
+/resources/protocol-archive
+```
+
+## 15. RC0.1 Release Gate
+
+This White Paper is RC0.1-ready when:
+
+- it remains synchronized with `CANON.md`;
+- every strategic claim maps to `CLAIM_REGISTER.md`;
+- every current market/regulatory claim maps to `SOURCE_REGISTER.md`;
+- claim boundaries are preserved;
+- it can replace the live `/whitepaper` route without leading with protocol/token material;
+- a reviewer can understand the product, boundary, first commercial wedge, and implementation hold.
